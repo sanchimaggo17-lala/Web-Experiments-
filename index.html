@@ -4,27 +4,41 @@
 <title>My Website</title>
 <style>
 body {
-  font-family: Arial;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: white;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
   text-align: center;
-  padding-top: 100px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 300px;
+}
+
+h1 {
+  color: #333;
 }
 
 a {
-  display: inline-block;
-  margin: 15px;
-  padding: 12px 25px;
-  background: white;
-  color: #333;
+  display: block;
+  margin: 15px 0;
+  padding: 12px;
+  border-radius: 10px;
   text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
+  color: white;
+  background: #667eea;
   transition: 0.3s;
 }
 
 a:hover {
-  background: #ffcc00;
+  background: #764ba2;
   transform: scale(1.05);
 }
 </style>
@@ -32,10 +46,11 @@ a:hover {
 
 <body>
 
-<h1>Welcome to My Website 🚀</h1>
-
-<a href="portfolio.html">My Portfolio</a>
-<a href="todo.html">To-Do App</a>
+<div class="container">
+  <h1>Welcome 👋</h1>
+  <a href="portfolio.html">My Portfolio</a>
+  <a href="todo.html">To-Do App</a>
+</div>
 
 </body>
 </html>
